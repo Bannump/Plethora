@@ -1,0 +1,202 @@
+/* header and nav bar*/
+header>h1{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino,serif;
+    text-align: center;
+    color: antiquewhite;
+    font-size:90px;
+    text-shadow:4px 2px black;
+}
+header{
+    background-color: rgba(255, 166, 0, 0.575);
+    padding: 0.6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px 50px;
+}
+#nav1{
+    display: block;
+    padding: 30px 40px ; 
+    border-radius: 55px;
+    background-color: #000;
+    color: orange;
+    width: 300px;
+    float:right;
+    margin-left: 220px;
+    margin-right: 80px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#nav1:hover{
+    background-color: rgba(245, 209, 7, 0.61);
+    color: #000;
+    border-radius: 0px;
+    border: 6px solid black;
+}
+body{
+    background-image: url(images/bg3.jpg);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header>nav{
+    text-align: right;
+    background-color: rgba(241, 241, 119, 0.548);
+    padding-bottom: 6px;
+    border-radius: 15px 50px;
+}
+nav>a{
+padding: 10px;
+font-size: 20px;
+background-color: black;
+color: orange;
+text-decoration: none;
+}
+.active{
+    background-color: orange;
+    color: black;
+}
+
+
+
+/*images and divs in events page */
+.imgs{
+    border: 3px solid black;
+    width: 400px;
+    height: 250px;
+}
+
+div.show-image {
+    position: relative;
+    float:left;
+    margin:5px;
+}
+div.show-image:hover img{
+    opacity:0.5;
+}
+div.show-image:hover input {
+    display: block;
+}
+div.show-image input {
+    position:absolute;
+    display:none;
+}
+div.show-image input.explore {
+    top:100px;
+    left:140px;
+    padding: 15px 30px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(rgb(51, 3, 53),rgb(161, 29, 161));
+    border-radius: 15px;
+    box-shadow: 3px;
+}
+.maindiv{
+    margin-top: 100px;
+    width: 835px;
+    margin-left: 22%;
+    margin-bottom: 100px;
+}
+
+#h1event{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+    margin-top: 1200px;
+    color: blanchedalmond;
+    font-size: 60px;
+    text-shadow:3px 2px black;
+    margin-top: 780px;
+}
+
+/* About section */
+#about{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-top:1020px;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 60px;
+    text-shadow:3px 2px black;
+}
+#p1{
+margin: 60px 100px;
+font-size: 20px;
+padding: 50px;
+background-color: rgba(247, 166, 15, 0.473);
+border-radius: 20px;
+}
+.imgs_abt{
+    width: 350px;
+    height: 300px;
+    float: left;
+    border: 15px solid black;
+    margin-bottom:350px ;
+}
+
+
+/* css for contact section */
+
+body{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin: 0;
+  }
+html {
+    box-sizing: border-box; } 
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.column {
+    margin-left: 40px;
+    float: left;
+    width: 30%;
+    margin-bottom: 100px;
+    padding: 0 8px;
+}
+.card {
+    box-shadow: 7px 7px 10px 10px rgba(0, 0, 0, 0.308);
+    margin: 8px;
+}
+.contact-section {
+    border: 1px solid orange;
+    padding: 20px;
+    text-align: center;
+    background-color: #020407f3;
+    color:orange;
+    clear: both;
+}
+.container {
+    padding: 0 16px;
+}
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+.title {
+    color: rgb(23, 11, 56);
+
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #555;
+}
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
