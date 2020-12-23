@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css1.css">
+
+    <style> 
+            h1{
+                font-size: 50px;
+            }
+            h3{
+                color: rgb(45, 196, 196);
+                font: italic;
+            }
+            body{
+                background-image: url(college_wallpaper.jpg);
+            }
+            form{
+                padding-top: 20px;
+                padding-left: 200px;
+                font:bold;
+                margin-top: 20px;
+                margin-right: 200px;
+                background-color: rgba(6, 26, 63, 0.884);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                color: rgb(247, 239, 239);
+                height: 650px;
+            }
+
+    </style>
+    <script>
+function myFunction1() {
+  document.getElementById("A").style.visibility = "visible";
+  document.getElementById("B").style.visibility = "hidden";
+  document.getElementById("C").style.visibility = "hidden";
+  document.getElementById("D").style.visibility = "hidden";
+
+}
+function myFunction2(){
+    document.getElementById("A").style.visibility = "hidden";
+  document.getElementById("B").style.visibility = "visible";
+  document.getElementById("C").style.visibility = "hidden";
+  document.getElementById("D").style.visibility = "hidden";
+}
+function myFunction3(){
+    document.getElementById("A").style.visibility = "hidden";
+  document.getElementById("B").style.visibility = "hidden";
+  document.getElementById("C").style.visibility = "visible";
+  document.getElementById("D").style.visibility = "hidden";
+}
+function myFunction4(){
+    document.getElementById("A").style.visibility = "hidden";
+  document.getElementById("B").style.visibility = "hidden";
+  document.getElementById("C").style.visibility = "hidden";
+  document.getElementById("D").style.visibility = "visible";
+    
+}
+    </script>
+</head>
+<body style=" background-image: url(images/image10.jpg);">
+      
+<header style="background-color: rgba(255, 153, 0, 0.884);">
+    <h1 id="main" style="font-size:50px ;" >~  Registration Form  ~</h1>
+    
+    </header>
+            <form style="font: bold; text-align: left;margin-left:300px;" action="newreg.php" method="post">
+              <table >
+                <tr>
+                <td>   First Name :</td><td><input type="text" value="" name="first"><br><br></td></tr>
+                 <tr><td>    Last Name : </td><td><input type="text" value="" name="last"><br><br></td></tr>
+                  <tr><td>    Registration Number : </td><td><input type="number" value="" required name="reg"><br><br></td></tr>
+               <tr><td>   University : </td><td><input type="text" value="" name="university"><br><br></td></tr>
+                 <tr><td>  Email Id : </td><td><input type="text" value="" name="email"><br><br></td></tr>
+                <tr><td>   Phone Number :</td><td><input type="number" value="" name="phone"><br><br></td> </tr>
+                <tr><td>    City :  </td><td><input type="text" value="" name="city"><br><br></td></tr></table>
+                    Event : 
+                    <button type="button" onclick="myFunction1()">Art Event</button>
+                    <button type="button" onclick="myFunction2()">Literary Events</button>
+                    <button type="button" onclick="myFunction3()">Stage Events</button>
+                    <button type="button" onclick="myFunction4()">Sports Event</button>
+                   <p id="A" >
+                   Art : <input type="checkbox" id="Art" name="Art[]" value="Oil Painting">
+                   <label for="Art"> Oil Painting</label>
+                    <input type="checkbox" id="Art" name="Art[]" value="SKetching">
+                    <label for="Art"> Sketching</label>
+                     <input type="checkbox" id="Art" name="Art[]" value="Painting">
+                     <label for="Art"> Painting</label><br>
+                   </p>                    
+                   <p id="B">
+                    Literary Events : <input type="checkbox" id="Literary" name="Art[]" value="Poem">
+                    <label for="Art"> Poetry </label>
+                     <input type="checkbox" id="Literary" name="Art[]" value="Essay">
+                     <label for="Art"> Essay Writting</label>
+                      <input type="checkbox" id="Literary" name="Art[]" value="Story">
+                      <label for="Art"> Story Writting</label><br>
+                   </p>                    
+                   <p id="C">
+                   Stage Events : <input type="checkbox" id="Stage" name="Art[]" value="THeme Dance">
+                    <label for="Art"> Theme Dance </label>
+                     <input type="checkbox" id="Stage" name="Art[]" value="Non - Theme Dance">
+                     <label for="Art"> Non Theme Dance</label>
+                      <input type="checkbox" id="Stage" name="Art[]" value="Duet">
+                      <label for="Art"> Duet</label>
+                      <input type="checkbox" id="Stage" name="Art[]" value="Solo">
+                      <label for="Art"> Solo</label><br>
+                     
+                   </p>                    
+                   <p id="D" >
+                    Sports Events : <input type="checkbox" id="Sports" name="Art[]" value="Cricket">
+                    <label for="Art"> Cricket </label>
+                     <input type="checkbox" id="Sports" name="Art[]" value="Football">
+                     <label for="Art"> Football</label>
+                      
+                   </p>                    
+                  <td>   
+                    <input type="submit" name="submit" value="SUBMIT" style="margin-left: 200px; padding: 10px; background-color: aqua;"></td>
+                    </tr>
+              <button style="margin-left: 200px; padding: 10px; background-color: aqua;"><a href="main.html">Back to mainpage</a></button>
+            </form>
+
+        
+</body>
+</html>
