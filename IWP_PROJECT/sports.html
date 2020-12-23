@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css1.css">
+	<title>SPORTS</title>
+	<style>
+		#bg{
+			box-sizing: border-box;
+			background-image: url('sports.png');
+			min-height: 100%;
+  			min-width: 1024px;
+  			background-repeat: no-repeat;
+  			background-position: center;
+  			background-size: cover;
+  			overflow: scroll;
+	
+  			/* Set up proportionate scaling */
+ 			width: 100%;
+ 			height: 100%;
+	
+  			/* Set up positioning */
+ 		 	position: fixed;
+  			top: 0;
+  			left: 0;
+		  }
+		.p1 {
+			width: 40%;
+			float: left;
+			margin: 10px;
+			color: rgb(0,0,0);
+			font-style: bold-italic;
+      		font-family:Impact, fantasy;
+			font-size: 40px;
+			padding-left: 120px; 
+		}
+		.p2 {
+			width: 40%;
+			float: left;
+			margin: 10px;
+			color: rgb(0,0,0);
+			font-style: bold;
+      		font-family: cursive;
+			font-size: 30px;
+			padding-left: 120px; 
+		}
+		#c{
+			font-size: 15px;
+		}
+		#d{
+			align-content: center;
+		}
+	
+		.button {
+  			border: none;
+  			color: white;
+  			padding: 16px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+  			font-style: bold;
+  			margin: 4px 2px;
+  			transition-duration: 0.4s;
+  			cursor: pointer;
+  		}
+  		.button2 {
+			margin-right: 400px;
+  			background-color: white; 
+  			color: black; 
+			border: 2px solid #46124d;
+			margin-left: 400px;
+  		}	
+  		.button2:hover{
+  			background-color: #260530;
+			  color: white;
+			font-size: 30px;
+  		}
+  		img{
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			widows: 50%;
+  		}		
+  		.flip-box {
+  background-color: transparent;
+  width: 370px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+	</style>
+</head>
+<body>
+		<div id="bg">
+			<header style="background-color: rgba(255, 136, 0, 0.705);">
+				<h1 style="font-size: 60px;" >~ Sport Events  ~</h1>
+			</header>		
+		<div class="p1">CRICKET</div>
+		<div class="p1">FOOTBALL</div>
+		<div class="p2">
+			<div class="flip-box">
+  				<div class="flip-box-inner">
+    				<div class="flip-box-front">
+      					<img src="cricket.png" alt="cricket" style="width:370px;height:250px">
+    				</div>
+    				<div class="flip-box-back">
+      					<p>Cricket</p>
+      					<p id="c">13 members a team<br>Playing 11 + 2 sub<br>Dugout available<br>White jersey mandatory</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="p2">
+			<div class="flip-box">
+  				<div class="flip-box-inner">
+    				<div class="flip-box-front">
+      					<img src="football.png" alt="football" style="width:370px;height:250px">
+    				</div>
+    				<div class="flip-box-back">
+      					<p>Football</p>
+      					<p id="c">13 members a team<br>Playing 11 + 2 sub<br>Dugout available<br>Team jersey mandatory</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="p1">
+			<button id="button10" class="button button2" style="margin-top: 100px;">Back to main page</button>
+      <script type="text/javascript">
+          document.getElementById("button10").onclick = function () {
+            location.href = "main.html";
+        };
+      </script>
+      <button id="button20" class="button button2" onclick="document.location='RegForm.html'">Register</button>
+   
+      </script>
+		</div>
+	</div>
+</body>
+</html>
