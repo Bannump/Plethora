@@ -14,3 +14,5 @@ Working :
 -> Find the output screenshots in HowItLooks folder                                                                                                                                 
 
 Main objective of this web application is to ease the process of registration and it's management in an event/fest 
+
+Teammates - Kirthans s & Ishan Kumar Anand
