@@ -17,4 +17,4 @@ Main objective of this web application is to ease the process of registration an
 
 Web development :
 
-Saratchandra(markonda.patnaikuni@btech.christuniversity.in) || Kirthans s(kirthana.s@btech.christuniversity.in) || Ishan Kumar Anand(ishan.kumar@btech.christuniversity.in)
+|| Saratchandra(markonda.patnaikuni@btech.christuniversity.in)                                                                                                                    || Kirthans s(kirthana.s@btech.christuniversity.in)                                                                                                                               || Ishan Kumar Anand(ishan.kumar@btech.christuniversity.in)
