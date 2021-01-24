@@ -15,4 +15,6 @@ Working :
 
 Main objective of this web application is to ease the process of registration and it's management in an event/fest 
 
-Teammates - Kirthans s(kirthana.s@btech.christuniversity.in) & Ishan Kumar Anand(ishan.kumar@btech.christuniversity.in)
+Web development :
+
+Saratchandra(markonda.patnaikuni@btech.christuniversity.in) || Kirthans s(kirthana.s@btech.christuniversity.in) || Ishan Kumar Anand(ishan.kumar@btech.christuniversity.in)
