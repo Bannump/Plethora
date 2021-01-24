@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css1.css">
+	<title>StageEvents</title>
+	<style>
+		#bg{
+			box-sizing: border-box;
+			background-image: url('stag.png');
+			min-height: 100%;
+  			min-width: 1024px;
+  			background-repeat: no-repeat;
+  			background-position: center;
+  			background-size: cover;
+  			overflow: scroll;
+	
+  			/* Set up proportionate scaling */
+ 			width: 100%;
+ 			height: 100%;
+	
+  			/* Set up positioning */
+ 		 	position: fixed;
+  			top: 0;
+  			left: 0;
+		  }
+		.p1 {
+			width: 40%;
+			float: left;
+			margin: 10px;
+			color: rgb(0,0,0);
+			font-style: bold-italic;
+			font-family:'Impact', Times, fantasy;
+			text-shadow: 1px 1px white;
+			font-size: 40px;
+			padding-left: 120px; 
+		}
+		.p2 {
+			width: 40%;
+			float: left;
+			margin: 10px;
+			color: rgb(0,0,0);
+			font-style: bold;
+      		font-family: cursive;
+			font-size: 30px;
+			padding-left: 120px; 
+		}
+		#c{
+			font-size: 15px;
+		}
+		.button {
+  			border: none;
+  			color: white;
+  			padding: 16px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+  			font-style: bold;
+  			margin: 4px 2px;
+  			transition-duration: 0.4s;
+  			cursor: pointer;
+  		}
+  		.button2 {
+  			background-color: white; 
+  			color: black; 
+			border: 2px solid #46124d;
+			margin-left: 400px;
+  		}	
+  		.button2:hover{
+  			background-color: #260530;
+			  color: white;
+			font-size: 30px;
+  		}
+  		img{
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			widows: 50%;
+  		}		
+  		.flip-box {
+  background-color: transparent;
+  width: 370px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+	</style>
+}
+</head>
+<body>
+
+	<div id="bg">
+		<header style="background-color: rgba(255, 136, 0, 0.836);">
+			<h1 style="font-size: 60px;" >~ Stage Events ~</h1></header>
+		<div class="p1">Theme Dance</div>
+		<div class="p1">Non-Theme Dance</div>
+		<div class="p2">
+			<div class="flip-box">
+  				<div class="flip-box-inner">
+    				<div class="flip-box-front">
+      					<img src="theme.png" alt="theme" style="width:370px;height:250px">
+    				</div>
+    				<div class="flip-box-back">
+      					<p>Theme Dance</p>
+      					<p id="c">A minimum of 7 members a team<br>Certain theme has to be chosen<br>Time : 6-8 min</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="p2">
+			<div class="flip-box">
+  				<div class="flip-box-inner">
+    				<div class="flip-box-front">
+      					<img src="nontheme.png" alt="nontheme" style="width:370px;height:250px">
+    				</div>
+    				<div class="flip-box-back">
+      					<p>Non-Theme Dance</p>
+      					<p id="c">A minimum of 7 members a team<br>1 complete song has to be performed<br>No mashups</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="p1">Duet</div>
+		<div class="p1">Solo</div>
+		<div class="p2">
+			<div class="flip-box">
+  				<div class="flip-box-inner">
+    				<div class="flip-box-front">
+      					<img src="duet.png" alt="duet" style="width:370px;height:250px">
+    				</div>
+    				<div class="flip-box-back">
+      					<p>Duet</p>
+      					<p id="c">Two contestansts<br>Male & a female<br>1 complete song has to be performed<br>No mashups</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="p2">
+			<div class="flip-box">
+  				<div class="flip-box-inner">
+    				<div class="flip-box-front">
+      					<img src="solo.png" alt="solo" style="width:370px;height:250px">
+    				</div>
+    				<div class="flip-box-back">
+      					<p>Solo</p>
+      					<p id="c">Single contestant<br>1 complete song has to be performed<br>No mashups</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="p1">
+			<button id="button10" class="button button2" style="margin-top: 30px; ">Back to main page</button>
+      <script type="text/javascript">
+          document.getElementById("button10").onclick = function () {
+            location.href = "main.html";
+        };
+      </script>
+      <button id="button20" class="button button2" style="margin-bottom: 150px;" onclick="document.location='RegForm.html'" >Register</button>
+   
+		</div>
+	</div>
+</body>
+</html>
