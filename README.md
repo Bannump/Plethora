@@ -20,4 +20,3 @@ Web development :
 || Saratchandra(markonda.patnaikuni@btech.christuniversity.in)
 || Kirthans s(kirthana.s@btech.christuniversity.in)                                                               
 || Ishan Kumar Anand(ishan.kumar@btech.christuniversity.in)
-|| M Krishna Bharadwaj(mbharadwajj@gmail.com)
